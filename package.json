@@ -1,0 +1,40 @@
+{
+  "name": "hapi-books",
+  "version": "0.0.2",
+  "description": "hapi-books",
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "lab --lint --lint-fix lib/index.js",
+    "start": "node lib/index.js",
+    "start-dev": "nodemon lib/index.js",
+    "test-plain": "lab -C -c -m 20000 -v test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/carlok/hapi-books.git"
+  },
+  "author": "Carlo Perassi <carlo.perassi@gmail.com>",
+  "license": "ISC",
+  "homepage": "https://github.com/carlok/hapi-books",
+  "dependencies": {
+    "bcrypt": "1.0.3",
+    "blipp": "2.3.0",
+    "boom": "6.0.0",
+    "dotenv": "4.0.0",
+    "hapi": "16.6.2",
+    "hapi-auth-jwt2": "7.3.0",
+    "hapi-cors-headers": "1.0.3",
+    "joi": "11.2.0",
+    "jsonwebtoken": "7.4.1",
+    "knex": "0.13.0",
+    "knex-cleaner": "1.1.3",
+    "mysql": "2.15.0",
+    "node-env-file": "0.1.8",
+    "objection": "0.8.9"
+  },
+  "devDependencies": {
+    "code": "5.1.0",
+    "lab": "14.3.1",
+    "nodemon": "1.12.1"
+  }
+}
